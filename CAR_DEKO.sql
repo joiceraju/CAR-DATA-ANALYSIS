@@ -1,0 +1,10 @@
+use car_dekho;
+describe car_table;
+select * from car_table;
+select * from Car_table order by selling_price  limit 1;
+select * from Car_table order by selling_price  limit 1;
+select counT(*) from Car_table as count_seat where seats = 4;
+select * from Car_table order by km_driven   limit 1;
+select * from Car_table order by engine desc limit 1; 
+select transmission,fuel,count(*) from Car_table group by transmission,fuel order by transmission,fuel;
+select avg(max_power) from Car_table where fuel='petrol';
